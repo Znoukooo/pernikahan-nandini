@@ -111,3 +111,45 @@ body {
 .italic {
     font-style: italic;
 }
+
+/* --- Tambahkan kode ini di bagian paling bawah style.css --- */
+
+/* Pengaturan khusus untuk HP (Layar di bawah 768px) */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem !important; /* Mengecilkan judul agar tidak pecah baris */
+    }
+
+    .floral-overlay {
+        width: 120px; /* Mengecilkan bunga di pojok agar tidak menutupi teks */
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.8rem; /* Mengecilkan nama mempelai */
+    }
+
+    .ampersand {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+
+    .count-item {
+        min-width: 65px; /* Mengecilkan kotak countdown agar pas 4 kotak ke samping */
+        padding: 10px 5px;
+    }
+
+    .count-item span {
+        font-size: 1.2rem;
+    }
+
+    .card-body {
+        padding: 2rem !important; /* Mengurangi padding card agar konten tidak sempit */
+    }
+}
+
+/* Memperbaiki gambar bunga agar tidak gepeng */
+.floral-overlay {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
