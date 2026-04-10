@@ -5,11 +5,13 @@
     --white: #ffffff;
 }
 
-body {
+html, body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-dark);
     overflow-x: hidden;
     background-color: var(--primary-color);
+    touch-action: pan-y;
+    
 }
 
 .main-title {
