@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #f8f1f1;
+    --accent-color: #d4a373;
+    --text-dark: #5b4b49;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+
+.main-title {
+    font-family: 'Great Vibes', cursive;
+    color: var(--white);
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Floral Ornaments */
+.floral-overlay {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    background-image: url('https://www.transparentpng.com/download/floral/floral-free-download-23.png');
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    background-image: url('https://www.transparentpng.com/download/floral/floral-free-download-23.png');
+    transform: rotate(180deg);
+}
+
+/* Countdown Styles */
+.count-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+}
+
+.count-item span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.count-item p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Typography */
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.ampersand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+
+.bg-light-floral {
+    background-color: #fff9f4;
+    position: relative;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-accent:hover {
+    background-color: #bc8a5f;
+    color: white;
+    transform: scale(1.05);
+}
+
+.italic {
+    font-style: italic;
+}
